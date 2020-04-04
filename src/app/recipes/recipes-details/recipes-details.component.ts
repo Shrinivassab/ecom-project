@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SelectItem} from "primeng";
 
 @Component({
   selector: 'app-recipes-details',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipesDetailsComponent implements OnInit {
 
+  recipeManageDropdown: SelectItem[];
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.recipeManageDropdown = [
+      {label: 'To Shopping List', value: 'list'},
+      {label: 'Edit Recipe', value: 'edit'},
+      {label: 'Delete Recipe', value: 'del'},
+    ];
   }
+
+
 
 }

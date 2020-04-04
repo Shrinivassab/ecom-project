@@ -11,7 +11,15 @@ import { RecipesDetailsComponent } from './recipes/recipes-details/recipes-detai
 import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-import { ButtonModule, CardModule, DropdownModule, SidebarModule, TabMenuModule } from "primeng";
+import {
+  ButtonModule,
+  CardModule,
+  DropdownModule,
+  InputTextModule,
+  ListboxModule,
+  SidebarModule,
+  TabMenuModule
+} from "primeng";
 import { SideBarComponent } from './side-bar/side-bar.component';
 
 @NgModule({
@@ -34,7 +42,9 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     SidebarModule,
     DropdownModule,
     BrowserAnimationsModule,
-    CardModule
+    CardModule,
+    ListboxModule,
+    InputTextModule
 
   ],
   providers: [],
