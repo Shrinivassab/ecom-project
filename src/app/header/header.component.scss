@@ -1,0 +1,30 @@
+.layout-topbar {
+  background: #252d32;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+}
+
+.layout-topbar-header {
+  padding: 10px 10px 10px 10px;
+  position: relative;
+  flex: 3;
+}
+
+.layout-topbar-content {
+  color: #d8d8d8;
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.layout-topbar-manage {
+  //float: right;
+  //flex: 1;
+  padding: 10px;
+}
