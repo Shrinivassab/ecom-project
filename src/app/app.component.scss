@@ -1,0 +1,14 @@
+.main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  height: calc( 100vh - 60px);
+  /* calculate the height. Header is 60px */
+}
+
+.layout-content {
+  flex: 1 0 auto;
+  margin-left: 250px;
+  margin-top: 60px;
+  padding: 20px 20px 20px 20px;
+}
