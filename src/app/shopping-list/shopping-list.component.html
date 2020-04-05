@@ -1,7 +1,17 @@
-<div class="row">
-  <div class="col-md-10">
+<div class="shopping-list-layout">
+  <div class="">
     <app-shopping-edit></app-shopping-edit>
     <hr>
-    <p>The list</p>
-  </div>
+    <!-- TODO: Remove inline style-->
+    <div class="shopping-list-ingredients">
+      <p-listbox [options]="ingredients" [style]="{'width':'100%'}" >
+        <ng-template let-ingredients pTemplate="item">
+          <div class="ui-helper-clearfix">
+            {{ingredients.name}} ({{ingredients.amount}})
+          </div>
+        </ng-template>
+      </p-listbox>
+    </div>
+    </div>
+
 </div>
