@@ -3,14 +3,9 @@
 
   <hr>
 
-  <div class="group-list-item card" *ngFor="let recipe of recipes">
-    <div>{{recipe.name}}</div>
-      <div class="recipe-list">
-        <div class="list-description">{{recipe.description}}</div>
-
-        <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive recipe-list-img">
-      </div>
-    </div>
-
-  <app-recipes-item></app-recipes-item>
+  <app-recipes-item
+    *ngFor="let recipeEl of recipes"
+    [recipe]="recipeEl"
+    (recipeSelected)="onRecipeSelected(recipeEl)">
+  </app-recipes-item>
 </div>

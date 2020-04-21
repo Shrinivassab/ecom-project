@@ -1,1 +1,21 @@
-<p>recipes-item works!</p>
+<div class="group-list-item card" (click)="onSelected()">
+  <div>{{recipe.name}}</div>
+  <div class="recipe-list">
+    <div class="list-description">{{recipe.description}}</div>
+    <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive recipe-list-img">
+  </div>
+</div>
+
+<!--<div class="group-list-item card" (click)="onSelected()">-->
+<!--  <p-card [header]="recipe.name" styleClass="ui-card-shadow">-->
+<!--    <p-header>-->
+<!--      <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="recipe-list-img">-->
+<!--    </p-header>-->
+<!--    <div>{{recipe.description}}</div>-->
+<!--  </p-card>-->
+<!--  &lt;!&ndash;  <div>{{recipe.name}}</div>&ndash;&gt;-->
+<!--  &lt;!&ndash;  <div class="recipe-list">&ndash;&gt;-->
+<!--  &lt;!&ndash;    <div class="list-description">{{recipe.description}}</div>&ndash;&gt;-->
+<!--  &lt;!&ndash;    <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive recipe-list-img">&ndash;&gt;-->
+<!--  &lt;!&ndash;  </div>&ndash;&gt;-->
+<!--</div>-->

@@ -1,6 +1,7 @@
 <div class="shopping-list-layout">
   <div class="">
-    <app-shopping-edit></app-shopping-edit>
+    <app-shopping-edit
+    (addIngredient)="onIngredientAdded($event)"></app-shopping-edit>
     <hr>
     <!-- TODO: Remove inline style-->
     <div class="shopping-list-ingredients">
