@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {SelectItem} from "primeng";
+import {Recipes} from "../recipes.model";
 
 @Component({
   selector: 'app-recipes-details',
@@ -7,7 +8,7 @@ import {SelectItem} from "primeng";
   styleUrls: ['./recipes-details.component.scss']
 })
 export class RecipesDetailsComponent implements OnInit {
-
+  @Input() recipe: Recipes;
   recipeManageDropdown: SelectItem[];
   constructor() { }
 

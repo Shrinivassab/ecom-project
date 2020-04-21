@@ -1,15 +1,15 @@
 <div class="recipe-detail-layout">
   <div>
-    <img src="" alt="" class="img-responsive">
+    <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive">
   </div>
   <div>
-    <h1>Recipe Name</h1>
+    <h1>{{recipe.name}}</h1>
   </div>
   <div>
     <p-dropdown [options]="recipeManageDropdown"></p-dropdown>
   </div>
   <div>
-    Description
+    {{recipe.description}}
   </div>
   <div>
     Ingredients
